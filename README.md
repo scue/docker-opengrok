@@ -11,7 +11,7 @@ sudo docker run --rm \
     -v /path/to/source:/src \
     -v /path/to/opengrok_data:/data \
     -p 8888:8080 \
-    scue/opengrok:cron
+    scue/docker-opengrok
 ```
 
 then, the search engine is available at `http://localhost:8888/`.
