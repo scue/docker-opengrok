@@ -14,4 +14,13 @@ sudo docker run --rm \
     scue/docker-opengrok
 ```
 
-then, the search engine is available at `http://localhost:8888/`.
+then, the search engine is available at `http://localhost:8888/source`.
+
+## Reindex
+To perform reindex while the container is running, perform the following:
+
+```
+sudo docker exec ${CONTAINER_NAME} OpenGrok index /src
+```
+
+where the *${CONTAINER_NAME}* is the name/id to this docker image.
