@@ -4,9 +4,9 @@ RUN mkdir /data
 RUN ln -s /data /var/opengrok
 RUN ln -s /src /var/opengrok/src
 RUN wget "https://java.net/projects/opengrok/downloads/download/opengrok-0.12.1.5.tar.gz" -O /tmp/opengrok-0.12.1.5.tar.gz
-RUN wget "http://ftp.us.debian.org/debian/pool/main/e/exuberant-ctags/exuberant-ctags_5.9~svn20110310-9_amd64.deb" -O /tmp/exuberant-ctags_5.9-svn20110310-9_amd64.deb
+RUN wget "http://ftp.us.debian.org/debian/pool/main/e/exuberant-ctags/exuberant-ctags_5.9~svn20110310-8_amd64.deb" -O /tmp/exuberant-ctags_5.9-svn20110310-8_amd64.deb
 RUN tar zxvf /tmp/opengrok-0.12.1.5.tar.gz -C /
-RUN dpkg -i /tmp/exuberant-ctags_5.9-svn20110310-9_amd64.deb
+RUN dpkg -i /tmp/exuberant-ctags_5.9-svn20110310-8_amd64.deb
 
 ENV SRC_ROOT /src
 ENV OPENGROK_TOMCAT_BASE /usr/local/tomcat
