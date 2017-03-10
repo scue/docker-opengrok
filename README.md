@@ -4,7 +4,7 @@ opengrok version: [opengrok-0.12.1.5](https://java.net/projects/opengrok/downloa
 
 image base on: [tomcat:8.0](https://registry.hub.docker.com/_/tomcat/)
 
-to start:
+## Start:
 
 ```
 sudo docker run --rm \
